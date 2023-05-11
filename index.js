@@ -275,5 +275,4 @@ app.get("/api/welcome", sendWelcomeMessage);
 app.get("/api/allQuestions", sendAllQuestions);
 app.use(serveStatic(path.join(__dirname, "public")));
 app.get("*", notFound);
-
 app.listen(port, () => console.log(`app listening on port ${port}!`));
